@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "文字の置き換え", "文字の置き換え.vcxproj", "{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "重複値の検出", "..\重複値の検出\重複値の検出.vcxproj", "{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Debug|x64.ActiveCfg = Debug|x64
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Debug|x64.Build.0 = Debug|x64
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Debug|x86.ActiveCfg = Debug|Win32
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Debug|x86.Build.0 = Debug|Win32
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Release|x64.ActiveCfg = Release|x64
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Release|x64.Build.0 = Release|x64
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Release|x86.ActiveCfg = Release|Win32
+		{78CBE089-B6BF-4EFF-8157-96CEBAE6DC84}.Release|x86.Build.0 = Release|Win32
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Debug|x64.ActiveCfg = Debug|x64
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Debug|x64.Build.0 = Debug|x64
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Debug|x86.Build.0 = Debug|Win32
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Release|x64.ActiveCfg = Release|x64
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Release|x64.Build.0 = Release|x64
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Release|x86.ActiveCfg = Release|Win32
+		{8FA52C23-6A6D-4313-AD4E-9620DFBFBE66}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF904A91-332B-470A-969A-FE2D04C81BD0}
+	EndGlobalSection
+EndGlobal
