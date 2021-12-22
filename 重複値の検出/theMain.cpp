@@ -14,24 +14,27 @@ using std::vector;
 int main()
 {
 	string stmp,itmp;
-	vector<string> strs;
+	vector<string> strs,dups;
 	cin >> itmp;
 	std::stringstream ss(itmp);
 	
 	while (getline(ss,stmp, ',')) {
 		auto res = std::find(strs.begin(), strs.end(), stmp);
-		if (res == strs.end()) {
-			strs.push_back(stmp);
+		if (res != strs.end()) {
+			auto res2 = std::find(dups.begin(), dups.end(), *res);
+			if(res2 == dups.end())
+				dups.push_back(stmp);
 		}
+		strs.push_back(stmp);
 	}
 	
-	if (strs.size() != 10) {
-		for (int i=0;i<strs.size();i++)
+	if (!dups.empty()){
+		for (int i=0;i<dups.size();i++)
 		{
-			if (i < strs.size() - 1)
-				cout << strs[i] << ",";
+			if (i < dups.size() - 1)
+				cout << dups[i] << ",";
 			else
-				cout << strs[i];
+				cout << dups[i];
 		}
 	}
 	else
