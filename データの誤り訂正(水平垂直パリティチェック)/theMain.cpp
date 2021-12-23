@@ -104,9 +104,9 @@ int main()
 	}
 	cin >> vp;
 
-	pair<int, int> index;
+	pair<int, int> index(-1, -1); //水平、垂直　列、行
 
-	cout << "水平パリティチェック" << endl;
+	//cout << "水平パリティチェック" << endl;
 	for (int i = 0; i < barray.size(); i++)
 	{
 		//cout << boolalpha << hpCheck(barray[i], entmp) << endl;
@@ -114,8 +114,8 @@ int main()
 		if (hpCheck(barray[i], entmp) == false)
 			index.first = i;
 	}
-	cout << "垂直パリティチェック" << endl;
-	for (int i = 0; i < vp.length(); i++)
+	//cout << "垂直パリティチェック" << endl;
+	for (int i = 0; i < vp.length() - 1; i++)
 	{
 		//cout << boolalpha << vpCheck(i, vp, barray, entmp) << endl;
 		if (vpCheck(i, vp, barray, entmp) == false)
@@ -124,5 +124,20 @@ int main()
 		}
 	}
 
-	cout << index.first << ", " << index.second  << endl;
+	if (index == std::make_pair(-1, -1)) {
+		for (int i = 0; i < barray.size(); i++) {
+			barray[i].erase(barray[i].size() - 1);
+			cout << binToUInt(barray[i]) << endl;
+		}
+	}
+	else
+	{
+		for (int i = 0; i < barray.size(); i++) {
+			if (barray[index.first][index.second] == '1') barray[index.first][index.second] = '0';
+			else barray[index.first][index.second] = '1';
+			barray[i].erase(barray[i].size() - 1);
+			cout << binToUInt(barray[i]) << endl;
+		}
+	}
+	//cout << index.first << ", " << index.second << endl;
 }
